@@ -10,17 +10,20 @@ const pets = [
 ]
 
 function App() {
-  
+  // console.log(pets)
+
   const petCards = pets.map((petObj) => {
-    return <PetCard name={petObj.name} image={petObj.image} />
+    return <PetCard key={petObj.id} name={petObj.name} image={petObj.image}/>
   })
-  
+
   console.log(petCards)
-  
   return (
     <div>
       <Header />
       <main>
+        {/* <PetCard name={pets[0].name} image={pets[0].image} />
+        <PetCard name={pets[1].name} image={pets[1].image} />
+        <PetCard name={pets[2].name} image={pets[2].image} /> */}
         {petCards}
       </main>
     </div>
