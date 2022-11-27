@@ -21,10 +21,7 @@ function App() {
     <div>
       <Header />
       <main>
-        {/* <PetCard name={pets[0].name} image={pets[0].image} />
-        <PetCard name={pets[1].name} image={pets[1].image} />
-        <PetCard name={pets[2].name} image={pets[2].image} /> */}
-        {petCards}
+          {petCards}
       </main>
     </div>
   );
