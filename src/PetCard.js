@@ -32,6 +32,7 @@ function PetCard(props) {
       <h3>Favorite Snacks</h3>
       <ul>
       {/* render snacks here */}
+      {props.favSnacks}
       </ul>
     </div>
   )

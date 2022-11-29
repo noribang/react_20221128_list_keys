@@ -19,7 +19,8 @@ function App() {
   const petCards = pets.map((petObj) => {
     return <PetCard key={petObj.id} 
                     name={petObj.name} 
-                    image={petObj.image}/>
+                    image={petObj.image}
+                    favSnacks={petObj.favSnacks}/>
   })
 
   return (
