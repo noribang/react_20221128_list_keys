@@ -24,7 +24,13 @@ import React from 'react'
 // remember to use a unique key prop
 
 function PetCard(props) {
-  console.log(props)
+  console.log(props.favSnacks)
+
+  const snackList = props.favSnacks.map((snack) => 
+    // console.log(snack)
+    <li key={snack}>{snack}</li>
+  )
+
   return (
     <div className="card">
       <h2>{props.name}</h2>
@@ -32,7 +38,7 @@ function PetCard(props) {
       <h3>Favorite Snacks</h3>
       <ul>
       {/* render snacks here */}
-      {props.favSnacks}
+      {snackList}
       </ul>
     </div>
   )
