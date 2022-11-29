@@ -17,7 +17,9 @@ const pets = [
 function App() {
   // Loop through object in array.
   const petCards = pets.map((petObj) => {
-    return <PetCard key={petObj.id} name={petObj.name} />
+    return <PetCard key={petObj.id} 
+                    name={petObj.name} 
+                    image={petObj.image}/>
   })
 
   return (
