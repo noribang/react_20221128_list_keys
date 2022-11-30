@@ -1,13 +1,24 @@
 import React from 'react';
 
 function EmojiButton(props) {
-  // <button> => React.createElement
+  // console.log(props)
+  
+  // Destructuring props
+  const { emoji, label } = props;
+
   return (
     <button>
-      <span role="img">{props.emoji}</span>
-      {props.label}
+      <span role="img">{emoji}</span>
+      {label}
     </button>
   )
+
+  // return (
+  //   <button>
+  //     <span role="img">{props.emoji}</span>
+  //     {props.label}
+  //   </button>
+  // )
 }
 
 export default EmojiButton
