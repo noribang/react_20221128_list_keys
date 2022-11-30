@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import EmojiButton from './EmojiButton';
 
 // function PetCard(props) {
 //     console.log(props.favSnacks)
@@ -24,7 +25,7 @@ import React from 'react'
 // remember to use a unique key prop
 
 function PetCard(props) {
-  console.log(props.favSnacks)
+  // console.log(props.favSnacks)
 
   const snackList = props.favSnacks.map((snack) => 
     // console.log(snack)
@@ -35,6 +36,8 @@ function PetCard(props) {
     <div className="card">
       <h2>{props.name}</h2>
       <img src={props.image} alt={props.name} />
+      {/* <EmojiButton emoji="&#128021;" label="Adopt"/> */}
+      <EmojiButton emoji="&#128018;" label="Save"/>
       <h3>Favorite Snacks</h3>
       <ul>
       {/* render snacks here */}

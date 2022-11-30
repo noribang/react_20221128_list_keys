@@ -1,6 +1,7 @@
 import React from 'react';
 
-function EmojiButton({ emoji, label }) {
+function EmojiButton({ emoji, label="Adopt" }) {
+  console.log(emoji)
 // function EmojiButton(props) {
   // console.log(props)
   
@@ -8,6 +9,9 @@ function EmojiButton({ emoji, label }) {
   // const { emoji, label } = props;
   // const emoji = props.emoji;
   // const label = props.label;
+
+  // console.log(emoji)
+  // console.log(label)
 
   return (
     <button>
